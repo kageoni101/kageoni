@@ -1,0 +1,98 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Navigation bar */
+nav {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-item {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: relative;
+    padding: 5px;
+}
+
+/* Consistent purple effect for Home, Skills, Interest, and About Me */
+.nav-item::before, .about-me::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 5px rgba(197, 8, 197, 0.6);
+    opacity: 1;
+}
+
+/* Profile section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+/* Profile Circle */
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    background-image: url('https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/379535113_326615909901841_8032342158051445401_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFlPJ6ciQxbhv4eL_CWIS2dtJPd6GIATFW0k93oYgBMVXNN5EW1x9IhieSA2ake8jQN829YXuIQJSSFw8cV_tL8&_nc_ohc=F6_ZZuwV-iEQ7kNvgEUhOvV&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&_nc_gid=AwL7qCWjq8b_pdavKmQrrLn&oh=00_AYDKmQ-lmwa5mMVFWDahq9XsfLWRHbHy0Qkfg1k8-nNAMw&oe=672718A0'); /* Add your profile image here */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile-circle::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(210, 8, 210, 0.6);
+    opacity: 10;
+    
+}
+
+.about-me {
+    
+    font-size: 1.2rem;
+    color: #ccc;
+    position: relative;
+    padding: 5px;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;
+    color: #ccc;
+    padding: 1rem;
+}
+
+

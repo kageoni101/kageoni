@@ -1,0 +1,77 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Navigation bar */
+.nav {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: relative;
+    padding: 5px;
+}
+
+/* Consistent purple effect for Home, Skills, Interest, and About Me */
+.nav-item::before, .content::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 5px rgba(197, 8, 197, 0.6);
+    opacity: 1;
+}
+.content {
+    
+    font-size: 1.2rem;
+    color: #ccc;
+    position: relative;
+    padding: 5px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;
+    color: #ccc;
+    padding: 1rem;
+}
+
+/* Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
